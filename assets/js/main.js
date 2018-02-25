@@ -23,7 +23,7 @@ window.onload = function () {
                 }
             }.bind(rq, this);
 
-            rq.open("GET", "/assets/pipimi.txt");
+            rq.open("GET", "https://raw.githubusercontent.com/de-teiu/endless-pipimi/master/assets/pipimi.txt");
             rq.send();
 
             var startBlockCount = window.parent.screen.height / 18 + 20;
