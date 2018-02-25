@@ -5,27 +5,27 @@
     <meta charset="utf-8">
     <title>endless PIPIMI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Automatically extending PIPIMI">
     <meta name="author" content="DE-TEIU">
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/yui/3.18.0/cssreset/cssreset-min.css">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="./assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="app">
-        <div class="ascii-art" v-infinite-scroll="loadMore" infinite-scroll-disabled="busy" infinite-scroll-distance="10">
-            <div>
-            </div>
-            <div v-for="data in data">
-                {{data.value}}
-            </div>
+
+        <div class="ascii-art">
+            <p>{{head}}</p>
+            <p v-for="data in additionalText">{{data.value}}</p>
+            <infinite-loading @infinite="infiniteHandler" ref="infiniteLoading" force-use-infinite-wrapper="true">
+            </infinite-loading>
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.1/vue.js"></script>
-    <script src="https://unpkg.com/vue-infinite-scroll@2.0.2/vue-infinite-scroll.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./assets/js/vue-infinite-loading.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

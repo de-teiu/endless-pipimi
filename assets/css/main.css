@@ -1,0 +1,47 @@
+@font-face{
+font-family: 'Saitamaar';
+src: local('Saitamaar'),
+url('http://keage.tokyo/fonts/Saitamaar.eot?') format('eot'),
+url('http://keage.tokyo/fonts/Saitamaar.woff2') format('woff2'),
+url('http://keage.tokyo/fonts/Saitamaar.woff') format('woff'),
+url('http://keage.tokyo/fonts/Saitamaar.ttf') format('truetype');
+font-weight: normal;
+font-style: normal; 
+}
+
+
+html,
+body {
+    height:100%;
+    font-size:100%;
+}
+
+
+.ascii-art {
+    font-family: 'Saitamaar', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-size: 3vw;
+    line-height: 3.3vw;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    white-space: pre-line;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scale(0.9, 0.9);
+    -moz-transform-origin: 0 0;
+    -moz-transform: scale(0.9, 0.9);
+    -ms-transform-origin: 0 0;
+    -ms-transform: scale(0.9, 0.9);
+    -o-transform-origin: 0 0;
+    -o-transform: scale(0.9, 0.9);
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -text-size-adjust: 100%;
+}
+
+@media screen and (min-width: 769px) {
+    .ascii-art {
+        font-size: 25px;
+        line-height: 26px;
+    }
+}
