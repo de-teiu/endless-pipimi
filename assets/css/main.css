@@ -1,10 +1,10 @@
 @font-face{
 font-family: 'Saitamaar';
 src: local('Saitamaar'),
-url('http://keage.tokyo/fonts/Saitamaar.eot?') format('eot'),
-url('http://keage.tokyo/fonts/Saitamaar.woff2') format('woff2'),
-url('http://keage.tokyo/fonts/Saitamaar.woff') format('woff'),
-url('http://keage.tokyo/fonts/Saitamaar.ttf') format('truetype');
+url('https://keage.tokyo/fonts/Saitamaar.eot?') format('eot'),
+url('https://keage.tokyo/fonts/Saitamaar.woff2') format('woff2'),
+url('https://keage.tokyo/fonts/Saitamaar.woff') format('woff'),
+url('https://keage.tokyo/fonts/Saitamaar.ttf') format('truetype');
 font-weight: normal;
 font-style: normal; 
 }
