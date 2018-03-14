@@ -45,3 +45,7 @@ body {
         line-height: 26px;
     }
 }
+
+[v-cloak] {
+  display: none;
+}

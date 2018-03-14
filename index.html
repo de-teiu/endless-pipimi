@@ -21,7 +21,7 @@
 <body>
     <div id="app">
 
-        <div class="ascii-art">
+        <div class="ascii-art" v-cloak>
             <p>{{head}}</p>
             <p v-for="data in additionalText">{{data.value}}</p>
             <infinite-loading @infinite="infiniteHandler" ref="infiniteLoading" force-use-infinite-wrapper="true">
